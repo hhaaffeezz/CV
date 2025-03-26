@@ -1,46 +1,197 @@
-.main-content {
-    margin-top: 100px;
-    border: 2px solid;
-    width: 100%;
-    height: 55vh;
-  }
-  .mainflex {
-    display: flex;
-   
-  }
-  .main-item {
-    border: 1px solid;
-    width: 100%;
-    height: 55vh;
-  }
-  .main-grid {
-    display: grid;
-    column-gap: 50px;
-    row-gap: 50px;
-    grid-template-columns: auto auto;
-    padding: 10px;
-  }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      /* General styles */
+      body {
+        font-family: Arial, sans-serif;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+      .nav-item {
+        font-size: 20px;
+      }
+      .nav-item ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      .nav-item li {
+        display: inline;
+        margin-right: 20px;
+      }
+      main {
+        margin-top: 100px;
+        width: 100%;
+        padding: 0 30px;
+      }
+      .mainflex {
+        display: flex;
+        gap: 20px;
+      }
+      .main-item {
+        border: 1px solid;
+        padding: 10px;
+        flex: 1;
+      }
+      .grid {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+        padding: 10px;
+      }
+      .grid-item {
+        border: 1px solid black;
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 10px;
+      }
+      footer {
+        text-align: center;
+        margin-top: 50px;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+      @media only screen and (max-width: 425px) {
+        header {
+          flex-direction: column;
+          align-items: center;
+        }
+        .nav-item ul {
+          text-align: center;
+        }
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div>
+        <h2>hafeez</h2>
+      </div>
+      <nav class="nav-item">
+        <ul>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="Articles.html">Articles</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  .items {
-    border: 1px solid black;
-    padding: 20px;
-  }
+    <!-- Main Content Section -->
+    <main>
+      <h1 style="text-align: center; font-size: 34px">Frontend Developer</h1>
+      <p style="text-align: center; margin-top: 10px; margin-bottom: 25px">html only with proper layout no styling</p>
 
-  .grid {
-    display: grid;
+      <section class="main-content">
+        <div class="mainflex">
+          <section class="main-item">
+            <div style="border: 1px solid black; width: 100%; height: 15vh">
+              <h4 style="margin-left: 20px">Projects</h4>
+              <p style="margin-left: 20px; margin-right: 20px; padding-top: 18px">Library Management System</p>
+            </div>
+            <div style="border: 1px solid black; width: 100%; height: 8vh">
+              <p style="margin-left: 20px; margin-right: 20px">Library Management System</p>
+            </div>
+            <div style="border: 1px solid black; width: 100%; height: 8vh">
+              <p style="margin-left: 20px; margin-right: 20px">Calculator (java)</p>
+            </div>
+            <div style="border: 1px solid black; width: 100%; height: 9vh">
+              <p style="margin-left: 20px; margin-right: 20px">Job Recomendation System</p>
+            </div>
+            <div style="border: 1px solid black; width: 100%; height: 14vh">
+              <p style="margin-left: 20px; margin-right: 20px">Transport Management System</p>
+            </div>
+          </section>
 
-    column-gap: 50px;
-    row-gap: 50px;
-    grid-template-columns: 450px 450px 450px;
+          <section class="main-item">
+            <div style="border: 1px solid black; width: 100%; height: 27.5vh">
+              <h4 style="margin-left: 20px">Work Experience</h4>
+              <p style="margin-left: 20px; margin-right: 20px">Enigma Solution</p>
+              <p style="margin-left: 20px; margin-right: 20px">Six months internship as Frontend Developer</p>
+              <a href="#" style="margin-left: 20px">Visit my profile</a>
+            </div>
+            <div style="border: 1px solid black; width: 100%; height: 27.5vh">
+              <h4 style="margin-left: 20px">Side Experience</h4>
+              <p style="margin-left: 20px; margin-right: 20px">Ronak Marketing</p>
+              <p style="margin-left: 20px; margin-right: 20px">Worked there for two months as Social Media Intern</p>
+              <a href="#" style="margin-left: 20px">Visit my profile</a>
+            </div>
+          </section>
 
-    padding: 10px;
-  }
+          <section class="main-item">
+            <h4 style="margin-left: 20px">Education</h4>
+            <p style="margin-left: 20px; margin-right: 20px">
+              Graduate with 3.76 out of 5 CGPA. Won Acme Hackathon. Organized 30 sessions.
+            </p>
+            <p style="margin-top: 20px; margin-left: 20px">Courses I took:</p>
+            <ul>
+              <li>OOP</li>
+              <li>DSA</li>
+              <li>WEB</li>
+              <li>DLD</li>
+              <li>AOOP</li>
+              <li>IDLgit</li>
+            </ul>
+          </section>
+        </div>
+      </section>
 
-  .grid-item {
-    border: 1px solid black;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-    border-radius: 10px;
-    height: 200px;
-  }
+      <!-- Reviews Section -->
+      <section>
+        <h3 style="margin-left: 10px; font-size: 24px;">Reviews from my teachers</h3>
+        <div class="grid">
+          <div class="grid-item">
+            <h5>
+              Abul Hafeez was a brilliant student; always stood out with his assignments.
+            </h5>
+            <p style="font-size: 15px;">Professor Nisar</p>
+          </div>
+          <div class="grid-item">
+            <h5>
+              Abul Hafeez was a brilliant student; always stood out with his assignments.
+            </h5>
+            <p style="font-size: 15px;">Professor Nisar</p>
+          </div>
+          <div class="grid-item">
+            <h5>
+              Abul Hafeez was a brilliant student; always stood out with his assignments.
+            </h5>
+            <p style="font-size: 15px;">Professor Nisar</p>
+          </div>
+          <div class="grid-item">
+            <h5>
+              Abul Hafeez was a brilliant student; always stood out with his assignments.
+            </h5>
+            <p style="font-size: 15px;">Professor Nisar</p>
+          </div>
+          <div class="grid-item">
+            <h5>
+              Abdul Hafeez was a brilliant student; always stood out with his assignments.
+            </h5>
+            <p style="font-size: 15px;">Professor Zain</p>
+          </div>
+          <div class="grid-item">
+            <h5>
+              Abdul Hafeez was a brilliant student; always stood out with his assignments.
+            </h5>
+            <p style="font-size: 15px;">Professor Hassan</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <p><i>&copy; Copyright reserved 2025</i></p>
+    </footer>
+  </body>
+</html>
