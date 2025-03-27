@@ -1,250 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <style>
-      .nav-container {
-        display: flex;
-        justify-content: space-between;
-        /* gap: 50px; */
-        background-color: aquamarine;
-      }
-      .nav-item {
-        font-size: 20px;
-        display: flex;
-      }
-
-      #item1 {
-        margin-right: 900px;
-      }
-
-      
-      .mainflex {
-        display: flex;
-        background-color: yellow;
-      }
-      .main-item {
-        border: 1px solid;
-        width: 100%;
-      }
-      .main-grid{
-        margin-top: 100px;
-        width: 100%;
-      }
-      .main{
-        background-color:salmon ;
-      }
-
-      .article {
-        display: grid;
-        justify-content: center;
-        column-gap: 50px;
-        row-gap: 51px;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto;
-background-color: aqua;
-        padding: 10px;
-      }
-
-      .grid-item {
-        border: 1px solid black;
-        padding: 20px;
-        font-size: 30px;
-        text-align: center;
-        border-radius: 10px;
-      }
-      @media only screen and (max-width: 425px) {
-        .nav-container {
-          flex-direction: column;
-        }
-
-        .nav-item {
-          flex-direction: column;
-        }
-
-        .mainflex {
-          flex-direction: column;
-        }
-
-        .grid {
-          grid-template-columns: 300px;
-          grid-template-rows: 300px;
-        }
-      }
-
-      .footer{
-        background-color: antiquewhite;
-      }
-
-     
-    </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <style>
+      body {
+        font-family: Ubuntu, Geneva, Tahoma, sans-serif;
+      }
+      .body {
+        background-color: aliceblue;
+
+        margin-left: 1px;
+        margin-right: 1px;
+      }
+      .flex-1 {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .item1 {
+        margin: 10px;
+
+        width: 300px;
+        height: 240px;
+      }
+      .item2 {
+        margin: 10px;
+        border: 2px solid black;
+        width: 300px;
+        height: 240px;
+        border-radius: 20px;
+      }
+
+      .flex-2 {
+        display: flex;
+        justify-content: center;
+      }
+
+      .item3 {
+        border-radius: 15px;
+        width: 230px;
+        height: 210px;
+        margin: 10px;
+        background-size: 100% 100%;
+      }
+
+      .item4 {
+        margin: 10px;
+        background-color: black;
+        background-color: aqua;
+        width: 385px;
+        height: 210px;
+        border-radius: 20px;
+      }
+
+      .flex-3 {
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        width: 630px;
+        height: 250px;
+        margin: auto;
+      }
+
+      .imgprg {
+        justify-content: flex-start;
+        
+        height: 40%;
+        display: flex;
+      
+        margin-top: 10px;
+      }
+      .imgprg2 {
+        
+        margin-top: 7px;
+        justify-content: flex-start;
+        display: flex;
+        height: 40%;
+        gap: 10px;
+        margin-top: 10px;
+        display: flex;
+      }
+
+      @media screen and (max-width: 480px) {
+        .flex-1 {
+          flex-direction: column;
+          width: auto;
+        }
+
+        .flex-2 {
+          flex-direction: column;
+          width: auto;
+          .item4 {
+            width: auto;
+          }
+        }
+        .flex-3 {
+          width: auto;
+        }
+      }
+    </style>
   </head>
   <body>
-    <header class="nav-container">
-      <header>
-        <h2>hafeez</h2>
-      </header>
-      <nav class="nav-item">
-        <ul>
-          <a href="projects.html">Projects</a>
-        </ul>
-        <ul>
-          <a href="Articles.html">Articles</a>
-        </ul>
-        <ul>
-          <a href="Contact.html">Contact</a>
-        </ul>
-      </nav>
-    </header>
+    <div class="body">
+      <div class="flex-1">
+        <div class="item1">
+          <p
+            style="
+            text-align: center;
+              height: 45%;
+              background-color: black;
+              color: aliceblue;
+              border-radius: 25px;
+              padding-top: 15px;
+              padding-left: 10px;
+              padding-right: 12px;
+             
+            "
+          >
+            I have been solving all the project ideas on roadmap.sh and i am suprised how far i have come from where i started.
+        </p>
 
-<main class="main">
-  <section>
-    <h1 style="text-align: center; margin-top: 0px; font-size: 34px">
-      Frontend Developer
-    </h1>
-    <p style="text-align: center; margin-top: 10px; margin-bottom: 25px">
-      html only with proper layout no styling
-    </p>
-    </section>
-    <div style="margin-left: 30px; margin-right: 30px">
-      
-        <section class="mainflex">
-          <section class="main-item">
-            <div style="border: 1px solid black; width: 100%; height: 15vh">
-              <h4 style="margin-left: 20px">Projects</h4>
-              <p
-                style="margin-left: 20px; margin-right: 20px; padding-top: 18px"
-              >
-                Library Management System
-              </p>
+          <div class="imgprg2">
+            <div class="icon-image2" style="width: 25%; margin-left: 13px">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT58-VVT8Wch6ligqL9BVGs4hHtZ2ChZeURvA&s"
+                style="height: 100%; width: 100%; border-radius: 80%"
+              />
             </div>
-            <div style="border: 1px solid black; width: 100%; height: 8vh">
-              <p style="margin-left: 20px; margin-right: 20px">
-                Library Management System
-              </p>
+            <div class="text2" style="width: 60%">
+              <p style="font-weight: bolder">Hafeez Afzal</p>
+              <p style="">Jounior frondend Developer</p>
             </div>
-            <div style="border: 1px solid black; width: 100%; height: 8vh">
-              <p style="margin-left: 20px; margin-right: 20px">
-                Calculator (java)
-              </p>
-            </div>
-            <div style="border: 1px solid black; width: 100%; height: 9vh">
-              <p style="margin-left: 20px; margin-right: 20px">
-                Job Recomendation System
-              </p>
-            </div>
-            <div style="border: 1px solid black; width: 100%; height: 14vh">
-              <p style="margin-left: 20px; margin-right: 20px">
-                Transport Management System
-              </p>
-            </div>
-          </section>
-          <section class="main-item">
-            <div style="border: 1px solid black; width: 100%; height: 27.5vh">
-              <h4 style="margin-left: 20px">Work Experience</h4>
-              <p style="margin-left: 20px; margin-right: 20px">
-                Enigma Solution
-              </p>
-              <p style="margin-left: 20px; margin-right: 20px">
-                Six months intership as Frontend Developer developer
-              </p>
-
-              <a href="#" style="margin-left: 20px">Visit my profile</a>
-            </div>
-            <div style="border: 1px solid black; width: 100%; height: 27.5vh">
-              <h4 style="margin-left: 20px">Side Experience</h4>
-              <p style="margin-left: 20px; margin-right: 20px">
-                Ronak Marketing
-              </p>
-              <p style="margin-left: 20px; margin-right: 20px">
-                Work their two months as Social media intern
-              </p>
-
-              <a href="#" style="margin-left: 20px">Visit my profile</a>
-            </div>
-          </section>
-          <section class="main-item">
-            <h4 style="margin-left: 20px">Eduacation</h4>
-            <p style="margin-left: 20px; margin-right: 20px">
-              Graduate with 3.76 out of 5 CGPa Won Acme Hackthon. Organized 30
-              sessions
+          </div>
+        </div>
+        <div class="item2">
+          <div style="height: 50%">
+            <p style="padding-left: 13px; padding-right: 12px; height: 50%">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi
+              vel reiciendis tempora optio unde saepe eaque atque voluptates
+              facere maxime, quas veniam tempore autem expedita sequi amet in
             </p>
-            <p style="margin-top: 20px; margin-left: 20px">Course I took</p>
+          </div>
+          <div class="imgprg">
+            <div class="icon-image" style="width: 25%; margin-left: 13px">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT58-VVT8Wch6ligqL9BVGs4hHtZ2ChZeURvA&s"
+                style="height: 75%; width: 75%; border-radius: 50%"
+              />
+            </div>
+            <div class="text" style="">
+              <p style="font-weight: bolder">Hafeez Afzal</p>
+              <p style="">Jounior frondend Developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-            <ul>
-              <li>OOP</li>
-              <li>DSA</li>
-              <li>WEB</li>
-              <li>DLD</li>
-              <li>AOOP</li>
-              <li>IDLgit</li>
-            </ul>
-          </section>
-        </section>
-      
-      <h3
-        style="
-          margin-left: 10px;
-          /* margin-bottom: 30px;
-          margin-top: 20px; */
-          font-size: 24px;
-        "
-      >
-        Reviews from my teachers
-      </h3>
-      
-      <article class="article">
-        <article class="grid-item">
-          <h5>
-            Abul Hafeez was brilliant student; always stood out with his
-            assignments
-          </h5>
-          <p style="font-size: 15px; padding-bottom: 25px">Professor Nisar</p>
-        </article>
-        <article class="grid-item">
-          <h5>
-            Abul Hafeez was brilliant student; always stood out with his
-            assignments
-          </h5>
-          <p style="font-size: 15px; padding-bottom: 25px">Professor Nisar</p>
-        </article>
-        <article class="grid-item">
-          <h5>
-            Abul Hafeez was brilliant student; always stood out with his
-            assignments
-          </h5>
-          <p style="font-size: 15px; padding-bottom: 25px">Professor Nisar</p>
-        </article>
-        <article class="grid-item">
-          <h5>
-            Abul Hafeez was brilliant student; always stood out with his
-            assignments
-          </h5>
-          <p style="font-size: 15px; padding-bottom: 25px">Professor Nisar</p>
-        </article>
-        <article class="grid-item">
-          <h5>
-            Abdul Hafeez brilliant student; always stood out with his
-            assignments
-          </h5>
-          <p style="font-size: 15px; padding-bottom: 25px">Professor Zain</p>
-        </article>
-        <article class="grid-item">
-          <h5>
-            Abdul Hafeez was brilliant student; always stood out with his
-            assignments
-          </h5>
-          <p style="font-size: 15px; padding-bottom: 25px">Professor Hassan</p>
-        </article>
-      </article>
+      <div class="flex-2">
+        <div class="item3">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1676973464513-7489d4ca4802?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8"
+            style="height: 100%; width: 100%; border-radius: 15px"
+          />
+        </div>
+        <div class="item4" style="background-color: black">
+          <p style="padding-left: 25px">
+            <i style="color: yellow; font-size: x-large">&star;</i
+            ><i style="color: yellow; font-size: x-large">&star;</i
+            ><i style="color: yellow; font-size: x-large">&star;</i
+            ><i style="color: yellow; font-size: x-large">&star;</i
+            ><i style="color: yellow; font-size: x-large">&star;</i>
+          </p>
+          <h3 style="color: aliceblue; padding-left: 25px;">
+            JACKIE MACKLE
+          </h3>
+          <p style="color: grey; padding-left: 25px">Enigneer Manager</p>
+          <p style="color: aliceblue; padding-left: 25px;">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+            veniam molestias iste, omnis repellat, asperiores cupiditate eveniet
+            
+          </p>
+        </div>
+      </div>
+      <div class="flex-3">
+        <p
+          style="
+            height: 40%;
+            padding-left: 5rem;
+            padding-right: 5rem;
+padding-top: 2rem;
+            text-align: center;
+         
+          "
+        >
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+          veniam molestias iste, omnis repellat, asperiores cupiditate eveniet
+          nis repellat, asperiores cupiditate eveniet
+        </p>
+
+        <div
+          style="
+          
+            height: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT58-VVT8Wch6ligqL9BVGs4hHtZ2ChZeURvA&s"
+            style="
+              height: 15%;
+              width: 15%;
+              border-radius: 50%;
+              height: 60%;
+              border: 1px soilid black;
+            "
+          />
+
+          <p style="height: 32%">Artem jones</p>
+        </div>
+      </div>
     </div>
-    </main>
-    
-<footer class="footer">
-      <p style="text-align: center"><i>&copy;</i> Copyright reserved 2025</p>
-    </footer>
-    
   </body>
 </html>
